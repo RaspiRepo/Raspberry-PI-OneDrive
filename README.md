@@ -16,6 +16,4 @@ login_field = driver.find_element_by_name("loginfmt")
 password_field = driver.find_element_by_name("passwd")
 sign_btn = driver.find_element_by_id("idSIButton9")
 
-and 
-After login login success
 element = driver.find_element_by_name('ucaccept')
