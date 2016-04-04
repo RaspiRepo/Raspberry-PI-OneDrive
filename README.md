@@ -1,2 +1,2 @@
-# Pi_OneDrive
+# Pi OneDrive
 OneDrive SDK for Raspberry Pi using python
