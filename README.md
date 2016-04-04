@@ -10,3 +10,12 @@ Drawback of this code is dependency with Onedrive login page (website) HTML fiel
 
 To find name of these fields open one drive login page and view HTML source and try to find Email/password text box names and login button name. 
 
+The following script need workaround if any changes from microsoft i.e. if authentication failed to get access code
+
+login_field = driver.find_element_by_name("loginfmt")
+password_field = driver.find_element_by_name("passwd")
+sign_btn = driver.find_element_by_id("idSIButton9")
+
+and 
+After login login success
+element = driver.find_element_by_name('ucaccept')
