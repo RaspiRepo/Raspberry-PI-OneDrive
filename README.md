@@ -20,8 +20,11 @@ To find name of these fields open one drive login page and view HTML source and 
 The following script need workaround if any changes from microsoft i.e. if authentication failed to get access code
 
 login_field = driver.find_element_by_name("loginfmt")
+
 password_field = driver.find_element_by_name("passwd")
+
 sign_btn = driver.find_element_by_id("idSIButton9")
+
 element = driver.find_element_by_name('ucaccept')
 
 Once access token retrived, same token can be used to access all Onedrive service.
