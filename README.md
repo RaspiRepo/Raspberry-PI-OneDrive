@@ -37,4 +37,9 @@ https://dev.onedrive.com/auth/msa_oauth.htm
 **** Register the application and get client ID*** Important step
 https://apps.dev.microsoft.com/Disambiguation?ru=https%3a%2f%2fapps.dev.microsoft.com%2f
 
+Copy the Client ID string and secret key from app control panel.
 
+*** Set this below value ****
+
+client_secret = "client_secret"
+client_id_str = "client_id_str
