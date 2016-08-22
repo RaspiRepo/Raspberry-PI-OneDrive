@@ -1,12 +1,19 @@
-# OneDrive access for RaspberryPi using Python
+# RaspberryPi + Microsoft OneDrive access using Python
 
-Getting One Drive access token using python without Web Browser UI on headless node like Raspberry PI.
+Reason for this:
+Mostly Raspberry PI connected without monitor (as headless node). To have Microsoft Onedrive storage access for Raspberry PI need UI and need to sign-in manually to get one time access token.  This script allows RaspberryPI device authenticate itself using Onedrive RESTful service. 
 
-Install Selenium python framework and phontomJS web driver to automate Onedrive authentication process without involve user or web browser UI.
+#Steps:
+1. Install Selenium python framework and phontomJS web driver.
+2. Install Microsoft Onedrive SDK (Python Framework)
+2. Download script.
+3. Modify Microsoft one drice user name and password.
+4. Excute the python script which will authenticate OneDrive service and get the authentication token.
+5. Using access token many Onedirve features can be accessed like store/share photo/video/documents or anything stored into OneDrive. 
 
-This allow any IoT devices like Raspberry PI to authenticate itself with OneDrive storage and do any other automated process like take photos and upload, sharing photo albums once picture upload done or file back backup service.
+#Things to watch
 
-Drawback of this code is dependency with Onedrive login page (website) HTML fields like where user enter email address, passowrd and login button names. Future if Microsoft change these HTML tag names this python code wont work.  Need to find exact field name again to workaround this issue.
+This process is partly a craking Microsoft OneDrive website (HTML page) and automate using login name and passowrd field invoke login button by script. Future if Microsoft change these HTML tag names mentioned below this python code wont work.  Need to find exact field name again.
 
 To find name of these fields open one drive login page and view HTML source and try to find Email/password text box names and login button name. 
 
@@ -15,5 +22,6 @@ The following script need workaround if any changes from microsoft i.e. if authe
 login_field = driver.find_element_by_name("loginfmt")
 password_field = driver.find_element_by_name("passwd")
 sign_btn = driver.find_element_by_id("idSIButton9")
-
 element = driver.find_element_by_name('ucaccept')
+
+Once access token retrived, same token can be used to access all Onedrive service.
