@@ -1,4 +1,4 @@
-# RaspberryPi Getting access Token from  Microsoft OneDrive SDK
+# Microsoft OneDrive access for Raspberry PI
 
 Reason for this:
 Mostly Raspberry PI connected without monitor (as headless node). To have Microsoft Onedrive storage access for Raspberry PI need UI and need to sign-in manually to get one time access token.  This script allows RaspberryPI device authenticate itself using Onedrive RESTful service. 
