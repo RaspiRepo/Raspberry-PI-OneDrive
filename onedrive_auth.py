@@ -1,4 +1,4 @@
-__author__ = 'Mariya'
+__author__ = 'RaspiRepo'
 import onedrivesdk
 from selenium import webdriver
 
