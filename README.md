@@ -1,14 +1,14 @@
 # Microsoft OneDrive access for Raspberry PI
 
 Reason for this:
-Mostly Raspberry PI connected without monitor (as headless node). To have Microsoft Onedrive storage access for Raspberry PI need UI and need to sign-in manually to get one time access token.  This script allows RaspberryPI device authenticate itself using Onedrive RESTful service. 
+Mostly Raspberry PI connected without monitor (as headless node). To have Microsoft Onedrive storage access for Raspberry PI we need to have UI and sign-in manually to get one time access token.  This script allows RaspberryPI device authenticate itself using Onedrive RESTful service. 
 
 #Steps:
 1. Install Selenium python framework and phontomJS web driver.
 2. Install Microsoft Onedrive SDK (Python Framework)
 2. Download script.
-3. Modify Microsoft one drice user name and password.
-4. Excute the python script which will authenticate OneDrive service and get the authentication token.
+3. Modify Microsoft one drive user name and password.
+4. Execute the python script which will authenticate OneDrive service and get the authentication token.
 5. Using access token many Onedirve features can be accessed like store/share photo/video/documents or anything stored into OneDrive. 
 
 #Things to watch
