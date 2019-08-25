@@ -15,7 +15,9 @@ Mostly Raspberry PI connected without monitor (as headless node). To have Micros
 
 This process is partly a craking Microsoft OneDrive website (HTML page) and automatically fill userlogin name, passowrd field and invoke login button. Future if Microsoft change these HTML tag names mentioned below need to modify python code according to that.
 
-To find name of these fields open onedrive login page and view HTML source and try to find Email/password text box names and login button name. NOTE: Chrome browser right click on textfield and choose "Inspect"
+To find name of these fields open onedrive login page and view HTML source and try to find Email/password text box names and login button name. 
+
+## NOTE: Chrome browser right click on textfield and choose "Inspect"
 
 The following lines need workaround if any changes from microsoft i.e. if authentication failed to get access code
 
