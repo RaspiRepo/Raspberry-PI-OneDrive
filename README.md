@@ -6,18 +6,18 @@ Mostly Raspberry PI connected without monitor (as headless node). To have Micros
 #Steps:
 1. Install Selenium python framework and phantomJS web driver.
 2. Install Microsoft Onedrive SDK (Python Framework)
-2. Download script.
+2. Download onedrive_auth.py script.
 3. Modify Microsoft one drive user name and password.
 4. Execute the python script which will authenticate OneDrive service and get the authentication token.
-5. Using access token many Onedirve features can be accessed like store/share photo/video/documents or anything stored into OneDrive. 
+5. Using access token, Onedirve features can be accessed like store/share photo/video/documents etc.
 
 #Things to watch
 
-This process is partly a craking Microsoft OneDrive website (HTML page) and automate using login name and passowrd field invoke login button by script. Future if Microsoft change these HTML tag names mentioned below this python code wont work.  Need to find exact field name again.
+This process is partly a craking Microsoft OneDrive website (HTML page) and automatically fill userlogin name, passowrd field and invoke login button. Future if Microsoft change these HTML tag names mentioned below need to modify python code according to that.
 
-To find name of these fields open one drive login page and view HTML source and try to find Email/password text box names and login button name. 
+To find name of these fields open onedrive login page and view HTML source and try to find Email/password text box names and login button name. NOTE: Chrome browser right click on textfield and choose "Inspect"
 
-The following script need workaround if any changes from microsoft i.e. if authentication failed to get access code
+The following lines need workaround if any changes from microsoft i.e. if authentication failed to get access code
 
 login_field = driver.find_element_by_name("loginfmt")
 
