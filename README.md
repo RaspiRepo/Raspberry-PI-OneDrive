@@ -11,7 +11,7 @@ Mostly Raspberry PI connected without monitor (as headless node). To have Micros
 4. Execute the python script which will authenticate OneDrive service and get the authentication token.
 5. Using access token, Onedirve features can be accessed like store/share photo/video/documents etc.
 
-#Things to watch
+# Things to watch
 
 This process is partly a craking Microsoft OneDrive website (HTML page) and automatically fill userlogin name, passowrd field and invoke login button. Future if Microsoft change these HTML tag names mentioned below need to modify python code according to that.
 
